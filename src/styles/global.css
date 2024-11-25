@@ -1,0 +1,28 @@
+/* Global font styles */
+:root {
+  --font-primary: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Override MUI Typography component styles */
+.MuiTypography-root {
+  font-family: var(--font-primary) !important;
+}
+
+/* Ensure consistent font in math content */
+.katex {
+  font-size: inherit !important;
+}
+
+/* Ensure consistent font in code blocks */
+code {
+  font-family: 'Roboto Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
